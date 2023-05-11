@@ -53,14 +53,17 @@ export default function Login({modalOpen, closeModal}) {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
 
+  /** Handle login input onchange */
   const handleInputChange = (e, setValue) => {
     setValue( e.currentTarget.value );
   };
 
+  /** Handle tab change - set active tab */
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
+  /** Handle Login Submit */
   const handleSubmitLogin = async () => {
     const requestBody = {
       username: email,
@@ -115,7 +118,7 @@ export default function Login({modalOpen, closeModal}) {
             </TabPanel>
             
             <TabPanel value={value} index={1}>
-              Item Two
+              Registration ...
             </TabPanel>
           </Box>
         </DialogContent>
