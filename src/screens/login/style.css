@@ -1,0 +1,10 @@
+.login-form-dialog .form__custom-button-login {
+    width: 100%;
+    background: #800080;
+    margin-top: 1rem;
+    color: #fff;
+}
+.login-form-dialog .form__custom-button-login:hover {
+    background: #800080;
+    color: #fff;
+}
